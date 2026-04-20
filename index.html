@@ -418,6 +418,128 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
+       PRODUCT PREVIEW DASHBOARD (Pattern 9)
+       ═══════════════════════════════════════════ -->
+  <section style="padding:3rem 0 5rem;">
+    <div class="container">
+      <p class="section-label reveal">Product Preview</p>
+      <div class="reveal-scale" style="border-radius:16px;overflow:hidden;border:1px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,0.5);background:#111113;">
+        <!-- Browser chrome -->
+        <div style="background:#161618;padding:0.65rem 1rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);">
+          <div style="display:flex;align-items:center;gap:0.75rem;">
+            <div style="display:flex;gap:0.3rem;">
+              <div style="width:8px;height:8px;border-radius:50%;background:#ff5f57;"></div>
+              <div style="width:8px;height:8px;border-radius:50%;background:#ffbd2e;"></div>
+              <div style="width:8px;height:8px;border-radius:50%;background:#28c840;"></div>
+            </div>
+            <span style="font-weight:800;font-size:0.65rem;color:var(--accent);">COIBot</span>
+          </div>
+          <span style="font-size:0.5rem;color:var(--text-muted);font-family:'JetBrains Mono',monospace;">app.coibot.leanaistudio.com</span>
+        </div>
+        <!-- Dashboard body -->
+        <div style="display:flex;min-height:380px;">
+          <!-- Sidebar -->
+          <div style="width:150px;flex-shrink:0;background:#0e0e10;border-right:1px solid var(--border);padding:1rem 0.6rem;" class="hide-mobile">
+            <div style="padding:0.45rem 0.65rem;border-radius:10px;font-size:0.55rem;color:var(--accent);font-weight:600;background:var(--accent-glow);display:flex;align-items:center;gap:0.45rem;margin-bottom:0.35rem;">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+              Dashboard
+            </div>
+            <div style="padding:0.45rem 0.65rem;font-size:0.55rem;color:var(--text-muted);display:flex;align-items:center;gap:0.45rem;margin-bottom:0.35rem;">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Certificates
+            </div>
+            <div style="padding:0.45rem 0.65rem;font-size:0.55rem;color:var(--text-muted);display:flex;align-items:center;gap:0.45rem;margin-bottom:0.35rem;">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Coverage
+            </div>
+            <div style="padding:0.45rem 0.65rem;font-size:0.55rem;color:var(--text-muted);display:flex;align-items:center;gap:0.45rem;margin-bottom:0.35rem;">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              Insureds
+            </div>
+            <div style="padding:0.45rem 0.65rem;font-size:0.55rem;color:var(--text-muted);display:flex;align-items:center;gap:0.45rem;margin-bottom:0.35rem;">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Expirations
+            </div>
+            <div style="padding:0.45rem 0.65rem;font-size:0.55rem;color:var(--text-muted);display:flex;align-items:center;gap:0.45rem;">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33"/></svg>
+              Settings
+            </div>
+          </div>
+          <!-- Main content -->
+          <div style="flex:1;padding:1.1rem 1.25rem;background:#111113;">
+            <!-- KPI grid -->
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.55rem;margin-bottom:1rem;">
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:0.65rem 0.75rem;">
+                <p style="margin:0;font-size:0.42rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);">Active COIs</p>
+                <p style="margin:0.2rem 0 0;font-size:1.2rem;font-weight:800;color:var(--text-primary);">47</p>
+                <p style="margin:0.1rem 0 0;font-size:0.42rem;color:var(--green);">All tracked</p>
+              </div>
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:0.65rem 0.75rem;">
+                <p style="margin:0;font-size:0.42rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);">Expiring 30d</p>
+                <p style="margin:0.2rem 0 0;font-size:1.2rem;font-weight:800;color:var(--accent);">8</p>
+                <p style="margin:0.1rem 0 0;font-size:0.42rem;color:var(--accent);">Alerts sent</p>
+              </div>
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:0.65rem 0.75rem;">
+                <p style="margin:0;font-size:0.42rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);">Lapsed</p>
+                <p style="margin:0.2rem 0 0;font-size:1.2rem;font-weight:800;color:var(--red);">2</p>
+                <p style="margin:0.1rem 0 0;font-size:0.42rem;color:var(--red);">Action needed</p>
+              </div>
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:0.65rem 0.75rem;">
+                <p style="margin:0;font-size:0.42rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);">Generated</p>
+                <p style="margin:0.2rem 0 0;font-size:1.2rem;font-weight:800;color:var(--text-primary);">134</p>
+                <p style="margin:0.1rem 0 0;font-size:0.42rem;color:var(--green);">This quarter</p>
+              </div>
+            </div>
+            <!-- Chart + Table -->
+            <div style="display:grid;grid-template-columns:1fr 1.8fr;gap:0.6rem;" class="hide-mobile">
+              <!-- Expiration trend chart -->
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:0.75rem;">
+                <p style="margin:0 0 0.5rem;font-size:0.5rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;">Expiration Trend</p>
+                <svg viewBox="0 0 200 100" style="width:100%;height:auto;">
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="rgba(249,115,22,0.3)"/>
+                      <stop offset="100%" stop-color="rgba(249,115,22,0)"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,70 L33,60 L66,75 L100,50 L133,35 L166,25 L200,20 L200,100 L0,100 Z" fill="url(#chartGrad)"/>
+                  <polyline points="0,70 33,60 66,75 100,50 133,35 166,25 200,20" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                </svg>
+              </div>
+              <!-- Certificate table -->
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:0.75rem;">
+                <p style="margin:0 0 0.5rem;font-size:0.5rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;">Recent Certificates</p>
+                <div style="display:flex;flex-direction:column;gap:0.3rem;">
+                  <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;border-bottom:1px solid var(--border);">
+                    <span style="font-size:0.5rem;color:var(--text-primary);font-weight:600;flex:1;">City Plumbing LLC</span>
+                    <span style="font-size:0.45rem;color:var(--text-muted);width:55px;">ACORD 25</span>
+                    <span style="font-size:0.42rem;padding:0.15rem 0.45rem;border-radius:9999px;background:rgba(239,68,68,0.1);color:var(--red);font-weight:600;">Lapsed</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;border-bottom:1px solid var(--border);">
+                    <span style="font-size:0.5rem;color:var(--text-primary);font-weight:600;flex:1;">ABC Electric Inc</span>
+                    <span style="font-size:0.45rem;color:var(--text-muted);width:55px;">ACORD 25</span>
+                    <span style="font-size:0.42rem;padding:0.15rem 0.45rem;border-radius:9999px;background:rgba(249,115,22,0.1);color:var(--accent);font-weight:600;">Expiring</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;border-bottom:1px solid var(--border);">
+                    <span style="font-size:0.5rem;color:var(--text-primary);font-weight:600;flex:1;">Green Earth Services</span>
+                    <span style="font-size:0.45rem;color:var(--text-muted);width:55px;">ACORD 25</span>
+                    <span style="font-size:0.42rem;padding:0.15rem 0.45rem;border-radius:9999px;background:rgba(34,197,94,0.1);color:var(--green);font-weight:600;">Current</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0;">
+                    <span style="font-size:0.5rem;color:var(--text-primary);font-weight:600;flex:1;">Metro HVAC Co</span>
+                    <span style="font-size:0.45rem;color:var(--text-muted);width:55px;">ACORD 25</span>
+                    <span style="font-size:0.42rem;padding:0.15rem 0.45rem;border-radius:9999px;background:rgba(34,197,94,0.1);color:var(--green);font-weight:600;">Current</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
        PAIN SECTION (accent gradient bg)
        ═══════════════════════════════════════════ -->
   <section class="accent-section">
@@ -554,7 +676,7 @@
       <div style="padding-top:5rem;">
         <p class="section-label reveal">Built for</p>
         <h2 class="section-title reveal" style="margin-bottom:3rem;">
-          CSRs at independent P&C agencies on AMS360
+          CSRs at independent P&C agencies <span class="gradient-text">on AMS360</span>
         </h2>
 
         <div class="grid-2" style="margin-bottom:2rem;">
@@ -571,12 +693,30 @@
         </div>
 
         <div class="reveal" style="display:flex;flex-wrap:wrap;gap:0.65rem;">
-          <span class="tag">AMS360 native</span>
-          <span class="tag">ACORD 25</span>
-          <span class="tag">instant generation</span>
-          <span class="tag">error-free</span>
-          <span class="tag">lapse monitoring</span>
-          <span class="tag">audit trail</span>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            AMS360 native
+          </span>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            ACORD 25
+          </span>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Instant generation
+          </span>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Error-free
+          </span>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Lapse monitoring
+          </span>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Audit trail
+          </span>
         </div>
       </div>
     </div>
@@ -679,14 +819,14 @@
     </div>
   </section>
 
-  <!-- FOUNDER + INCUBATOR BADGE -->
-  <section style="padding:2.5rem 2rem 0;">
-    <div style="max-width:1120px;margin:0 auto;text-align:center;">
-      <div style="display:inline-flex;align-items:center;gap:1rem;padding:1rem 1.5rem;border:1px solid rgba(255,255,255,0.06);border-radius:0.5rem;background:rgba(255,255,255,0.02);">
-        <img src="https://leanaistudio.com/founder.jpeg" alt="Dario Verghi" style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid rgba(249,115,22,0.2);" />
+  <!-- FOUNDER + INCUBATOR BADGE (Pattern 4) -->
+  <section style="padding:2.5rem 0 0;">
+    <div class="container" style="text-align:center;">
+      <div class="reveal" style="display:inline-flex;align-items:center;gap:1rem;padding:1rem 1.5rem;border:1px solid var(--border);border-radius:14px;background:var(--surface);">
+        <img src="https://leanaistudio.com/founder.jpeg" alt="Dario Verghi" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(249,115,22,0.2);" />
         <div style="text-align:left;">
           <p style="margin:0;font-size:0.875rem;color:var(--text-primary);font-weight:600;">A project by <a href="https://leanaistudio.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">LeanAI Studio</a>, built by <a href="https://www.linkedin.com/in/verghi/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Dario Verghi</a></p>
-          <p style="margin:0.25rem 0 0;font-size:0.8125rem;color:var(--text-secondary);line-height:1.5;">Building focused tools for underserved B2B niches. We ship this if 50 people sign up.</p>
+          <p style="margin:0.25rem 0 0;font-size:0.8125rem;color:var(--text-muted);line-height:1.5;">Building focused tools for underserved B2B niches.</p>
         </div>
       </div>
     </div>
