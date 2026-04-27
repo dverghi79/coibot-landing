@@ -1371,20 +1371,6 @@
   </script>
 
 
-<!-- DKI: Dynamic Keyword Insertion — replaces hero H1 with ?headline= param -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var params = new URLSearchParams(window.location.search);
-  var hl = params.get('headline');
-  if (hl) {
-    var h1 = document.querySelector('h1.reveal.reveal-delay-1') || document.querySelector('section h1') || document.querySelector('h1');
-    if (h1) {
-      h1.setAttribute('data-default-headline', h1.innerHTML);
-      h1.textContent = decodeURIComponent(hl.replace(/\+/g, ' '));
-    }
-  }
-});
-</script>
 
 </body>
 </html>
