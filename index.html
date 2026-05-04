@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>COIBot — Automated ACORD 25 Certificate generation from AMS360</title>
-  <meta name="description" content="Automated Certificate of Insurance generation from AMS360 for independent P&C agencies. Stop manually building ACORD 25s that come back with errors." />
-  <meta property="og:title" content="COIBot — Automated ACORD 25 Certificate generation from AMS360" />
-  <meta property="og:description" content="Automated Certificate of Insurance generation from AMS360 for independent P&C agencies. Stop manually building ACORD 25s that come back with errors." />
+  <title>COIBot — Stop Keying ACORD 25s by Hand. Auto-Generate from AMS360.</title>
+  <meta name="description" content="COIBot auto-generates ACORD 25 certificates from your AMS360 data — correct limits, correct holders, zero re-keying. Built for CSRs at 2-20 producer independent P&C agencies tired of manual COI work." />
+  <meta property="og:title" content="COIBot — Stop Keying ACORD 25s by Hand. Auto-Generate from AMS360." />
+  <meta property="og:description" content="COIBot auto-generates ACORD 25 certificates from your AMS360 data — correct limits, correct holders, zero re-keying. Built for CSRs at 2-20 producer independent P&C agencies tired of manual COI work." />
   <meta property="og:url" content="https://coibot.leanaistudio.com" />
   <link rel="canonical" href="https://coibot.leanaistudio.com" />
 
@@ -62,6 +62,7 @@
       document.head.appendChild(s);
       gtag('js', new Date());
       gtag('config', 'AW-18071371531');
+      gtag('config', 'G-MJGQSSEBQ5');
     }
     function grantConsent() {
       localStorage.setItem('cookie_consent', 'accepted');
@@ -346,11 +347,11 @@
         <!-- Left: Copy -->
         <div>
           <div class="reveal" style="margin-bottom:1.5rem;">
-            <div class="badge"><span class="dot"></span> Early Access — Insurance Agencies</div>
+            <div class="badge"><span class="dot"></span> Early Access — CSRs at Independent P&C Agencies</div>
           </div>
 
           <h1 class="reveal reveal-delay-1" style="font-size:clamp(2.25rem,4.5vw,3.25rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:1.25rem;color:var(--text-primary);">
-            Most agencies find out about a lapse after it happens. <span class="gradient-text">You'll know before.</span>
+            You're still keying ACORD 25s by hand and tracking expirations in a spreadsheet. <span class="gradient-text">COIBot does both from AMS360.</span>
           </h1>
 
           <div class="reveal reveal-delay-1" style="margin-bottom:1.5rem;">
@@ -362,21 +363,21 @@
           <div class="reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:0.65rem;margin-bottom:2.5rem;max-width:600px;">
             <div style="display:flex;align-items:center;gap:0.75rem;font-size:1.05rem;color:var(--text-secondary);">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Pull policy data directly from AMS360 with zero manual re-entry
+              Pulls limits, endorsements, and holders straight from AMS360 — zero re-keying
             </div>
             <div style="display:flex;align-items:center;gap:0.75rem;font-size:1.05rem;color:var(--text-secondary);">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Generate ACORD 25 certificates with correct limits every time
+              Generates correct ACORD 25s in clicks, not 10-15 minutes of manual entry
             </div>
             <div style="display:flex;align-items:center;gap:0.75rem;font-size:1.05rem;color:var(--text-secondary);">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Deliver PDFs to holders automatically and eliminate correction requests
+              Tracks every COI expiration so you stop chasing renewals from a spreadsheet
             </div>
           </div>
 
           <div class="reveal reveal-delay-3" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;">
             <a href="#waitlist" class="btn-primary">
-              See Which COIs Are Already Expired
+              Stop Keying Certs by Hand
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
             <a href="#how-it-works" class="btn-ghost">See how it works ↓</a>
@@ -490,7 +491,7 @@
         <div class="aha-body">
           <!-- Caption overlay -->
           <div id="aha-caption" class="aha-caption" style="color:#ef4444;">
-            Manually filling fields from AMS360...
+            Re-keying limits from AMS360 into the ACORD form...
           </div>
 
           <!-- The morphing form -->
@@ -707,7 +708,7 @@
     <div class="container">
       <p class="section-label reveal">The problem</p>
       <h2 class="section-title reveal" style="margin-bottom:3rem;">
-        That sub's insurance expired 3 weeks ago. <span class="gradient-text">You found out from the adjuster.</span>
+        You're the one keying certs, chasing renewals, and tracking expirations. <span class="gradient-text">AMS360 doesn't help.</span>
       </h2>
 
       <div class="grid-3">
@@ -715,22 +716,22 @@
           <div style="width:3.25rem;height:3.25rem;border-radius:14px;background:rgba(239,68,68,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5m-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11m3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5"/></svg>
           </div>
-          <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Manual tracking is a liability trap.</h3>
-          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">You have 47 subs on your books. 12 of their COIs expire this month. Your office manager is tracking them in a spreadsheet she updates when she remembers.</p>
+          <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Spreadsheet tracking is a liability trap.</h3>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">You have dozens of COIs to track across your book. Expirations slip through because the spreadsheet only gets updated when you remember. One lapsed cert means an E&O exposure nobody saw coming.</p>
         </div>
         <div class="glass-card reveal reveal-delay-2">
           <div style="width:3.25rem;height:3.25rem;border-radius:14px;background:rgba(249,115,22,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg>
           </div>
-          <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">ACORD 25 assembly = time sink.</h3>
-          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">Pull up the policy in AMS360, cross-reference limits, type them into the ACORD form, double-check every field. One certificate takes 10–15 minutes. Multiply by dozens per week.</p>
+          <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">10-15 minutes per cert, dozens per week.</h3>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">Pull up the policy in AMS360, cross-reference limits, type them into the ACORD form, double-check every field. At a 2-20 producer agency, you're doing this dozens of times a week — hours of re-keying that never ends.</p>
         </div>
         <div class="glass-card reveal reveal-delay-3">
           <div style="width:3.25rem;height:3.25rem;border-radius:14px;background:rgba(113,113,122,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/></svg>
           </div>
-          <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">AMS360's native tool doesn't cut it.</h3>
-          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">Vertafore's certificate tool has accuracy problems documented on G2. You end up checking its output anyway — doing the work twice.</p>
+          <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Chasing renewals eats your day.</h3>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">A holder calls for an updated cert. A producer needs one for a new job. An expiration slipped and now the insured is calling. Every interruption pulls you away from the rest of your book.</p>
         </div>
       </div>
     </div>
@@ -853,7 +854,7 @@
     <div class="container">
       <p class="section-label reveal">How it works</p>
       <h2 class="section-title reveal" style="margin-bottom:2.5rem;">
-        Three steps. <span class="gradient-text">Real coverage visibility.</span> Zero surprises.
+        Three steps. <span class="gradient-text">Zero re-keying.</span> Every expiration tracked.
       </h2>
 
       <!-- Pipeline diagram -->
@@ -909,8 +910,8 @@
             </div>
             <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Step 1</span>
           </div>
-          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">See every expired COI from your dashboard</h3>
-          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">COIBot links to your AMS360 instance and reads policy data directly. You'll see which COIs are current, which are expiring, and which already lapsed.</p>
+          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Connect your AMS360 instance</h3>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">COIBot reads policy data, limits, endorsements, and certificate holders directly from AMS360. Setup takes under 5 minutes — no IT needed at a 2-20 producer agency.</p>
         </div>
         <div class="glass-card reveal reveal-delay-2" style="position:relative;overflow:hidden;">
           <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right, var(--accent-glow), transparent);pointer-events:none;"></div>
@@ -931,8 +932,8 @@
             </div>
             <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Step 3</span>
           </div>
-          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Deliver automatically, zero correction requests</h3>
-          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">COIBot emails the PDF to the holder. No re-typing, no errors, no callbacks. Your producers get perfect certs the first time, every time.</p>
+          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Track expirations, stop chasing renewals</h3>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">Every COI is tracked automatically. Expiring certs get flagged before they lapse. No more spreadsheet tracking, no more surprise calls from holders.</p>
         </div>
       </div>
     </div>
@@ -947,19 +948,19 @@
       <div style="padding-top:5rem;">
         <p class="section-label reveal">Built for</p>
         <h2 class="section-title reveal" style="margin-bottom:3rem;">
-          CSRs at independent P&C agencies <span class="gradient-text">on AMS360</span>
+          CSRs at 2-20 producer independent P&C agencies <span class="gradient-text">on AMS360</span>
         </h2>
 
         <div class="grid-2" style="margin-bottom:2rem;">
           <div class="glass-card reveal reveal-delay-1">
             <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);display:block;margin-bottom:1rem;">The time problem</span>
-            <h3 style="font-size:1.15rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Stop spending hours on manual COI work.</h3>
-            <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">COIBot cuts certificate generation from 10–15 minutes to a few clicks. For a CSR processing 30+ certs per week, that's hours recovered every week.</p>
+            <h3 style="font-size:1.15rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Stop re-keying data you already have in AMS360.</h3>
+            <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">At a 2-20 producer agency, you're the one keying every cert. COIBot cuts each one from 10-15 minutes to a few clicks — hours recovered every week that go back to servicing your book.</p>
           </div>
           <div class="glass-card reveal reveal-delay-2">
             <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);display:block;margin-bottom:1rem;">The accuracy problem</span>
-            <h3 style="font-size:1.15rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Zero errors. Zero correction requests.</h3>
-            <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">COIBot pulls limits, additional insureds, and endorsements directly from AMS360 — no transcription errors. Holders get the right certificate the first time.</p>
+            <h3 style="font-size:1.15rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Stop chasing expirations from a spreadsheet.</h3>
+            <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.6;">COIBot tracks every COI automatically. You see what's current, expiring, and lapsed — no more spreadsheet audits, no more surprise calls when a cert lapses without warning.</p>
           </div>
         </div>
 
@@ -1014,11 +1015,11 @@
             <div style="display:flex;flex-direction:column;gap:0.75rem;font-size:0.875rem;margin-bottom:1.5rem;">
               <p style="display:flex;align-items:center;gap:0.625rem;color:var(--text-secondary);margin:0;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                See expired COIs from your dashboard, no manual tracking
+                Auto-generate ACORD 25s from AMS360 — zero re-keying
               </p>
               <p style="display:flex;align-items:center;gap:0.625rem;color:var(--text-secondary);margin:0;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                Generate correct ACORD certificates automatically from AMS360
+                Track every COI expiration automatically — no more spreadsheets
               </p>
               <p style="display:flex;align-items:center;gap:0.625rem;color:var(--text-secondary);margin:0;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1074,7 +1075,7 @@
               </div>
             </div>
             <button type="submit" id="submit-btn" class="btn-primary" style="width:100%;height:3rem;font-size:1rem;">
-              See Which COIs Are Already Expired
+              Stop Keying Certs by Hand
             </button>
             <p style="font-size:0.8rem;color:var(--accent);font-weight:600;text-align:center;margin:0.5rem 0 0;">Once spots are filled, onboarding closes before launch.</p>
             <p style="font-size:0.75rem;color:rgba(180,210,230,0.65);text-align:center;margin:0;">By signing up you accept our <a href="/privacy.html" style="color:var(--accent);text-decoration:underline;">Privacy Policy</a> and analytics cookies. No spam — we will only contact you about COIBot.</p>
@@ -1275,11 +1276,11 @@
         status.className = 'aha-status pain';
         status.textContent = 'Manual Entry';
         caption.style.color = '#ef4444';
-        caption.textContent = 'Manually filling fields from AMS360...';
+        caption.textContent = 'Re-keying limits from AMS360 into the ACORD form...';
         scanBar.style.width = '0';
         scanBar.style.background = 'transparent';
         timer.style.color = '#ef4444';
-        timerText.textContent = '~15 minutes of manual work';
+        timerText.textContent = '~10-15 min per cert × dozens per week';
         fields.forEach(function(f) { f.textContent = f.dataset.pain; });
 
         // Phase 2: SYNCING (after 3s)
@@ -1288,7 +1289,7 @@
           status.className = 'aha-status syncing';
           status.textContent = 'AI Syncing...';
           caption.style.color = '#a855f7';
-          caption.textContent = 'COIBot pulling data from AMS360...';
+          caption.textContent = 'COIBot pulling limits + endorsements from AMS360...';
           scanBar.style.background = 'linear-gradient(90deg, #a855f7, #8b5cf6)';
           scanBar.style.width = '100%';
           timer.style.color = '#a855f7';
